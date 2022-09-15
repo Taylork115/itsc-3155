@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="name-input" type="text" placeholder="Enter your name" />
+<button id="my-button">Click Me</button>
+
+<script>
+    //This line of code creates a button attribute for user input attribute
+  var myButton = document.querySelector('#my-button');
+  //This line of code creates a name attribute for the button
+  var nameInput = document.querySelector('#name-input');
+    //This line of code creates a method for the user to input something
+    //in the input line and print out Hello + userinput as long as it is not empty
+  myButton.addEventListener('click', function () {
+    if (nameInput.value !== '') {
+      alert('Hello ' + nameInput.value);
+    }
+  });
+</script>
+</body>
+</html>
